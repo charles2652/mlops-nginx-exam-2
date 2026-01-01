@@ -1,0 +1,55 @@
+############################
+# Python
+############################
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.env
+.venv
+venv/
+env/
+ENV/
+
+############################
+# Jupyter / ML
+############################
+.ipynb_checkpoints/
+*.pkl
+*.joblib
+*.h5
+*.pt
+
+############################
+# Docker
+############################
+*.log
+docker-compose.override.yml
+
+############################
+# Nginx / Sécurité
+############################
+deployments/nginx/.htpasswd
+deployments/nginx/certs/
+*.crt
+*.key
+
+############################
+# Prometheus / Grafana
+############################
+prometheus_data/
+grafana_data/
+
+############################
+# OS / IDE
+############################
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+############################
+# Git
+############################
+*.swp
+*.swo
