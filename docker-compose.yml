@@ -61,7 +61,7 @@ services:
     build:
       context: deployments/nginx/
       dockerfile: Dockerfile
-#    container_name: nginx_revproxy
+    container_name: mlops-nginx-1
     ports:
       - "8080:80"
       - "443:443"
