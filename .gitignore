@@ -1,55 +1,36 @@
 ############################
-# Python
+# Python & Environnement
 ############################
 __pycache__/
 *.py[cod]
 *.pyo
-*.pyd
 .env
 .venv
-venv/
 env/
-ENV/
+venv/
 
 ############################
-# Jupyter / ML
+# ML & Modèles
 ############################
-.ipynb_checkpoints/
+# On ignore les fichiers lourds par défaut
 *.pkl
 *.joblib
 *.h5
-*.pt
+# MAIS on force l'inclusion du modèle de production pour l'examen
+!models/model.joblib
 
 ############################
-# Docker
+# Infrastructure & Sécurité
 ############################
-*.log
-docker-compose.override.yml
-
-############################
-# Nginx / Sécurité
-############################
-deployments/nginx/.htpasswd
-deployments/nginx/certs/
-*.crt
-*.key
-
-############################
-# Prometheus / Grafana
-############################
+# Pour l'examen, on laisse les certs pour que ça tourne "out-of-the-box"
+# (Dans la vraie vie, on les ignorerait)
+# On ignore seulement les données de volume persistantes
 prometheus_data/
 grafana_data/
 
 ############################
-# OS / IDE
+# Divers
 ############################
 .DS_Store
-Thumbs.db
-.vscode/
-.idea/
-
-############################
-# Git
-############################
-*.swp
-*.swo
+.pytest_cache/
+*.tar
